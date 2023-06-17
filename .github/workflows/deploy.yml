@@ -35,3 +35,8 @@ jobs:
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+      - name: "Set the remote URL"
+        run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        if: ${{ github.ref == 'refs/heads/main' }} # only deploy main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
