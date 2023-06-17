@@ -28,7 +28,7 @@ jobs:
       - name: "Install Dependencies"
         run: yarn
       - name: "Github Pages Deployment"
-        run: Squeakers99/main
+        run: Squeakers99/squeakers99.github.io
         if: ${{ github.ref == 'refs/heads/main' }} # only deploy main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
