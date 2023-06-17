@@ -20,9 +20,11 @@ jobs:
       run: npm install
     - name: Build page
       run: npm run build
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: "Github Pages Deployment"
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        yarn deploy -u "github-actions-bot <support+actions@github.com>"
+      if: ${{ github.ref == 'refs/heads/main' }} # only deploy main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        publish_dir: ./build
