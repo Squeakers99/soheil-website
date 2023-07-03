@@ -1,14 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from "react";
+import Navbar from "./Components/NavBar";
+import Home from "./Components/Pages/Home/Home";
+import Projects from "./Components/Pages/Projects/Projects";
+import Resume from "./Components/Pages/Resume/Resume";
+import {HashRouter as Router, Route, Routes} from "react-router-dom";
+import "./Style.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Contact from "./Components/Pages/Contact/Contact";
 
 function App() {
+  const [load, updateLoad] = useState(true);
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          updateLoad(false);
+      }, 1200);
+
+      return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-      <img src={logo} alt="brand" width="100" height="100"/>
-        <text>Hi There Nerds! I'm Soheil!</text>
-      </header>
-    </div>
+      <Router>
+          <div className="App" id={load ? "no-scroll" : "scroll"}>
+              <Navbar/>
+              <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/projects" element={<Projects/>}/>
+                  <Route path="/resume" element={<Resume/>}/>
+                  <Route path="/contact" element={<Contact/>}/>
+              </Routes>
+          </div>
+      </Router>
   );
 }
 
