@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/Logo.png";
 import {Link} from "react-router-dom";
+import { NavLink } from "react-bootstrap";
 
 function NavBar() {
     const [expand, updateExpanded] = useState(false);
@@ -53,11 +54,21 @@ function NavBar() {
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
+                            <NavLink
+                                as={Link}
+                                to="/about"
+                                onClick={() => updateExpanded(false)}
+                                title="About Me"
+                                >
+                                    About
+                                </NavLink>
+                        </Nav.Item>
+                        <Nav.Item>
                             <Nav.Link
                                 as={Link}
                                 to="/contact"
                                 onClick={() => updateExpanded(false)}
-                                title="Contact"
+                                title="Contact Me"
                             >
                                 Contact
                             </Nav.Link>
