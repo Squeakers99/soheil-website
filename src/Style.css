@@ -1,4 +1,6 @@
+/*--------*/
 /* Navbar */
+/*--------*/
 
 .sticky {
         background-color: rgba(25, 34, 54, 0.66) !important;
@@ -77,8 +79,7 @@
                 padding: 0.7rem 1rem !important;
         }
         .navbar-nav .nav-item a:hover {
-                pointer-events: none;
-                background-color: red;
+                transition: 0s;
         }
 }
 
@@ -120,13 +121,71 @@
 }
 
 .navbar-nav .nav-item a:hover {
-        content: "";
         background-color: #4c9e9e;
         border-radius: 5px;
         position: relative;
-        display: block;
 }
-    
-.navbar-nav .nav-item a:hover::after {
-        width: 100%;
+
+/*---------*/
+/* Homepage */
+/*---------*/
+
+.home-header {
+        padding-top: 80px !important;
+        position: relative !important;
+}
+
+.home-content {
+        padding: 9rem 0 2rem !important;
+        color: whitesmoke;
+        text-align: left;
+}
+
+.heading {
+        font-size: 2.4em !important;
+        padding-left: 50px !important;
+}
+
+.heading-name {
+        font-size: 2.5em !important;
+        padding-left: 50px !important;
+        position: relative;
+}
+
+@media (max-width: 1200px) {
+        .heading-name {
+                font-size: 2em !important;
+        }
+}
+
+.blue,
+.name {
+        color: #58abff;
+}
+
+.Typewriter__wrapper {
+        font-size: 2.2em !important;
+        color: #4a80ff !important;
+        font-weight: 600 !important;
+}
+
+.Typewriter__cursor {
+        font-size: 2.4em !important;
+        color: #3f78f9 !important;
+}
+
+@media (max-width: 700px) {
+        .Typewriter__wrapper {
+                font-size: 1.4em !important;
+                font-weight: 500 !important;
+                position: absolute !important;
+        }
+
+        .Typewriter__cursor {
+                display: none !important;
+        }
+
+        .heading-name {
+                font-size: 1.6em !important;
+        }
 }
