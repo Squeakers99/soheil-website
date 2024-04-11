@@ -79,7 +79,7 @@
                 padding: 0.7rem 1rem !important;
         }
         .navbar-nav .nav-item a:hover {
-                transition: 0s;
+                background-color: transparent !important;
         }
 }
 
@@ -88,7 +88,7 @@
 }
 
 .logo {
-        height: 1.4em !important;
+        height: 2.5em !important;
         width: 2.5em !important;
 }
 
@@ -120,7 +120,7 @@
         z-index: 1;
 }
 
-.navbar-nav .nav-item a:hover {
+.navbar-nav .nav-item a:hover{
         background-color: #4c9e9e;
         border-radius: 5px;
         position: relative;
@@ -129,6 +129,8 @@
 /*---------*/
 /* Homepage */
 /*---------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap');
 
 .home-header {
         padding-top: 80px !important;
@@ -150,6 +152,13 @@
         font-size: 2.5em !important;
         padding-left: 50px !important;
         position: relative;
+        font-family: 'Noto Sans', sans-serif;
+}
+
+.heading-typewriter {
+        font-size: 2em !important;
+        padding-left: 50px !important;
+        position: relative;
 }
 
 @media (max-width: 1200px) {
@@ -158,7 +167,7 @@
         }
 }
 
-.blue,
+.blue, 
 .name {
         color: #58abff;
 }
@@ -180,11 +189,9 @@
                 font-weight: 500 !important;
                 position: absolute !important;
         }
-
         .Typewriter__cursor {
                 display: none !important;
         }
-
         .heading-name {
                 font-size: 1.6em !important;
         }
