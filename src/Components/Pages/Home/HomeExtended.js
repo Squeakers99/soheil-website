@@ -10,7 +10,7 @@ function HomeExtended() {
           <Col md={8} className="avatar">
             <img
               src={profilePicture}
-              alt="Profile Picture"
+              alt="Profile Pic"
               className="img-fluid"
               style={{
                 borderRadius: "50%",
