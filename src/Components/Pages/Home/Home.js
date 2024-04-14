@@ -2,11 +2,12 @@ import React from 'react'
 import Typewriter from './Typewriter'
 import {Col, Container, Row} from "react-bootstrap"
 import homeImg from "../../../Assets/Home Image.png"
+import HomeExtended from './HomeExtended.js'
 
 function Home() {
   return (
     <section>
-      <Container fluid className="home-main-section" id="home">
+      <Container fluid className="home-main" id="home">
         <Container className="home-content">
           <Row>
             <Col className="home-header">
@@ -34,6 +35,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
+      <HomeExtended/>
     </section>
   )
 }

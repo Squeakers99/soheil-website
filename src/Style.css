@@ -12,7 +12,6 @@
         position: fixed !important;
         padding: 0.3rem 2rem !important;
         font-size: 1.2rem !important;
-        margin-top: 10px;
 }
 
 .navbar-toggler {
@@ -172,6 +171,11 @@
         color: #58abff;
 }
 
+.red{
+        color: #ff5f5f;
+
+}
+
 .Typewriter__wrapper {
         font-size: 2.2em !important;
         color: #4a80ff !important;
@@ -195,4 +199,41 @@
         .heading-name {
                 font-size: 1.6em !important;
         }
+        .avatar {
+                padding-top: 2em !important;
+                padding-bottom: 2em !important;
+        }
+}
+
+.avatar {
+        justify-content: center !important;
+        padding-top: 5em !important;
+        margin-left: -15%;
+}
+
+.home-about-section{
+        position: relative;
+        margin-left: -50%;
+}
+
+.home-about-content {
+        color: white !important;
+        padding-top: 100px !important;
+        padding-bottom: 20px !important;
+        text-align: center;
+}
+
+.about-heading {
+        font-size: 2.5em !important;
+        padding-bottom: 20px !important;
+        margin-left: -40%;
+        margin-right: -30%;
+}
+
+.about-paragraph{
+        padding-top: 50px;
+        font-size: 1.2em !important;
+        text-align: left;
+        margin-left: -40%;
+        margin-right: -30%;
 }

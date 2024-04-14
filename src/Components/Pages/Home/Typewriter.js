@@ -9,7 +9,8 @@ function Slots() {
                     "Developer",
                     "Student",
                     "Gamer",
-                    "Nerd"
+                    "Nerd",
+                    "Hardware Enthusiast"
                 ],
                 autoStart: true,
                 loop: true,
