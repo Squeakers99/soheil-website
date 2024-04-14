@@ -8,7 +8,7 @@ function HomeExtended() {
       <Container>
         <Row>
           <Col md={8} className="avatar">
-            <img
+           <img
               src={profilePicture}
               alt="Profile Pic"
               className="img-fluid"
@@ -39,9 +39,12 @@ function HomeExtended() {
               <br/>
 
               I have experience in <i><b className="blue">Java, C++, C#, HTML, CSS, JavaScript, and Dart</b></i>. I am fluent in <i><b className="blue">Python</b></i> and have programmed <i><b className="blue">Artificial Intelligence models</b></i> using it.
-          </p>
-        </Col>
+            </p>
+          </Col>
         </Row>
+        <Row className="socials">
+          <h1 className="socials-title">FIND ME AT</h1>
+            </Row>
       </Container>
     </Container>
   );

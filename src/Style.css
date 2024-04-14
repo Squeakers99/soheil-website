@@ -12,6 +12,7 @@
         position: fixed !important;
         padding: 0.3rem 2rem !important;
         font-size: 1.2rem !important;
+        transition: all 0.3s ease-out 0s !important;
 }
 
 .navbar-toggler {
@@ -215,7 +216,6 @@
 .home-about-content {
         color: white !important;
         padding-top: 100px !important;
-        padding-bottom: 20px !important;
         text-align: center;
 }
 
@@ -248,4 +248,9 @@
         .about-paragraph {
                 order: 1 !important;
         }
+}
+
+.socials-title {
+        font-size: 3em !important;
+        color: white !important;
 }
