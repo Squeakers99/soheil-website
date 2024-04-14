@@ -14,7 +14,7 @@ function HomeExtended() {
               className="img-fluid"
               style={{
                 borderRadius: "50%",
-                maxHeight: "45%",
+                maxHeight: "45%"
               }}
             />
           </Col>
@@ -26,16 +26,19 @@ function HomeExtended() {
               Hello! My name is Soheil Rajabali. I am a grade 12 student currently enrolled in the STEM Program at <a style={{textDecoration: "none"}} className="blue" href="https://stau.ycdsb.ca/">St Augustine CHS</a>
 
               <br/>
-
-              I am an aspiring Engineer. I have a passion for technology and innovation and I am always looking for ways to improve my skills and knowledge in the field.
-
               <br/>
 
-              My fields of interest include Robotics, Automation, and Artificial Intelligence.
+              I am an aspiring <b className="blue">Engineer</b>. I have a passion for <i><b className="blue">technology and innovation</b></i> and I am always looking for ways to improve my skills and knowledge in the field.
 
               <br/>
+              <br/>
 
-              I have experience in Java, C++, and C#. I am fluent in Python and have programmed AI models using it.
+              My fields of interest include <i><b className="blue">Robotics, Automation, and Artificial Intelligence</b></i>.
+
+              <br/>
+              <br/>
+
+              I have experience in <i><b className="blue">Java, C++, and C#</b></i>. I am fluent in <i><b className="blue">Python</b></i> and have programmed <i><b className="blue">Artificial Intelligence models</b></i> using it.
           </p>
         </Col>
         </Row>

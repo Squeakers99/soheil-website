@@ -199,10 +199,6 @@
         .heading-name {
                 font-size: 1.6em !important;
         }
-        .avatar {
-                padding-top: 2em !important;
-                padding-bottom: 2em !important;
-        }
 }
 
 .avatar {
@@ -224,10 +220,11 @@
 }
 
 .about-heading {
-        font-size: 2.5em !important;
+        font-size: 3em !important;
         padding-bottom: 20px !important;
         margin-left: -40%;
         margin-right: -30%;
+        font-family: "Bebas Neue", sans-serif;
 }
 
 .about-paragraph{
@@ -236,4 +233,19 @@
         text-align: left;
         margin-left: -40%;
         margin-right: -30%;
+}
+
+@media (max-width: 700px) {
+        .avatar {
+                order: 2 !important;
+                margin-left: 0 !important;
+                margin-top: -2em !important;
+        }
+        .about-heading, .about-paragraph {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+        }
+        .about-paragraph {
+                order: 1 !important;
+        }
 }
