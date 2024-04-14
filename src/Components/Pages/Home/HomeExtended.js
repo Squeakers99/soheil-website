@@ -38,7 +38,7 @@ function HomeExtended() {
               <br/>
               <br/>
 
-              I have experience in <i><b className="blue">Java, C++, and C#</b></i>. I am fluent in <i><b className="blue">Python</b></i> and have programmed <i><b className="blue">Artificial Intelligence models</b></i> using it.
+              I have experience in <i><b className="blue">Java, C++, C#, HTML, CSS, JavaScript, and Dart</b></i>. I am fluent in <i><b className="blue">Python</b></i> and have programmed <i><b className="blue">Artificial Intelligence models</b></i> using it.
           </p>
         </Col>
         </Row>
