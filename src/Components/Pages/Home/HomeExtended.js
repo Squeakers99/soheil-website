@@ -1,6 +1,8 @@
 import React from 'react'
 import profilePicture from "../../../Assets/Portrait Picture.jpg"
 import {Col, Container, Row} from "react-bootstrap"
+import {CiLinkedin} from "react-icons/ci";
+import {VscGithub} from "react-icons/vsc";
 
 function HomeExtended() {
   return (
@@ -14,7 +16,8 @@ function HomeExtended() {
               className="img-fluid"
               style={{
                 borderRadius: "50%",
-                maxHeight: "45%"
+                maxHeight: "75%",
+                marginBottom: "-58%"
               }}
             />
           </Col>
@@ -23,7 +26,15 @@ function HomeExtended() {
               JUST A BIT <b className="red">ABOUT ME</b>
             </h1>
             <p className="about-paragraph">
-              Hello! My name is Soheil Rajabali. I am a grade 12 student currently enrolled in the STEM Program at <a style={{textDecoration: "none"}} className="blue" href="https://stau.ycdsb.ca/">St Augustine CHS</a>
+              Hello! My name is Soheil Rajabali. I am a grade 12 student currently enrolled in the STEM Program at <a 
+                style={{textDecoration: "none"}} 
+                className="blue"
+                target="_blank"
+                rel="noreferrer"
+                href="https://stau.ycdsb.ca/"
+              >
+                  St Augustine CHS
+              </a>
 
               <br/>
               <br/>
@@ -44,7 +55,34 @@ function HomeExtended() {
         </Row>
         <Row className="socials">
           <h1 className="socials-title">FIND ME AT</h1>
-            </Row>
+        </Row>
+        <Row>
+          <Col>
+            <div className="circle-animation" style={{float: "right"}}>
+              <a 
+                href="https://www.linkedin.com/in/soheilrajabali/"
+                target="_blank"
+                rel="noreferrer"
+                className="socials-icons"
+              >
+                <CiLinkedin size="50"/>
+              </a>
+            </div>
+          </Col>
+            <Col>
+              <div className="circle-animation" style={{float: "left"}}>
+                <a 
+                  href="https://github.com/Squeakers99"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="socials-icons"
+                >
+                  <VscGithub size="50"/>
+                </a>
+              </div>
+            </Col>
+            <div style={{height: "100px"}}></div>
+        </Row>
       </Container>
     </Container>
   );
