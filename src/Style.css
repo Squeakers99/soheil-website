@@ -268,6 +268,8 @@
         justify-content: center;
         align-items: center;
         background-color: white;
+        width: 0px;
+        height: 0px;
         margin-right: -20px;
         margin-left: -20px;
         border-radius: 50%;
@@ -330,17 +332,19 @@
         }
 }
 
-.social-icons:hover + .circle-animation{
-        width: 70px;
-        height: 70px;
-        animation-name: social-background-animation;
-        animation-duration: 0.2s;
-        animation-timing-function: ease-in-out;
-}
-
-.social-icons:hover {
-        color: #2b3544;
-        animation-name: social-icons-animation;
-        animation-duration: 0.2s;
-        animation-timing-function: ease-in-out;
+@media (hover: hover) {
+        .social-icons:hover + .circle-animation{
+                width: 70px;
+                height: 70px;
+                animation-name: social-background-animation;
+                animation-duration: 0.2s;
+                animation-timing-function: ease-in-out;
+        }
+        
+        .social-icons:hover {
+                color: #2b3544;
+                animation-name: social-icons-animation;
+                animation-duration: 0.2s;
+                animation-timing-function: ease-in-out;
+        }
 }
