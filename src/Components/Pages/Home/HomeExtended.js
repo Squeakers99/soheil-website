@@ -53,35 +53,52 @@ function HomeExtended() {
             </p>
           </Col>
         </Row>
-        <Row className="socials">
-          <h1 className="socials-title">FIND ME AT</h1>
+        <Row className="social">
+          <h1 className="social-title">FIND ME AT</h1>
         </Row>
         <Row>
           <Col>
-            <div className="circle-animation" style={{float: "right"}}>
+            <Container style={{
+              height: "80px", 
+              width: "80px", 
+              float: "right", 
+              marginRight: "5px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center"
+            }}>
               <a 
                 href="https://www.linkedin.com/in/soheilrajabali/"
                 target="_blank"
                 rel="noreferrer"
-                className="socials-icons"
+                className="social-icons"
               >
                 <CiLinkedin size="50"/>
               </a>
-            </div>
+              <div className="circle-animation"></div>
+            </Container>
           </Col>
-            <Col>
-              <div className="circle-animation" style={{float: "left"}}>
-                <a 
-                  href="https://github.com/Squeakers99"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="socials-icons"
-                >
-                  <VscGithub size="50"/>
-                </a>
-              </div>
-            </Col>
-            <div style={{height: "100px"}}></div>
+          <Col>
+          <Container style={{
+              height: "80px", 
+              width: "80px", 
+              float: "left", 
+              marginLeft: "5px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center"
+            }}>
+              <a 
+                href="https://github.com/Squeakers99"
+                target="_blank"
+                rel="noreferrer"
+                className="social-icons"
+              >
+                <VscGithub size="50"/>
+              </a>
+              <div className="circle-animation"></div>
+            </Container>
+          </Col>
         </Row>
       </Container>
     </Container>
